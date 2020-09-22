@@ -1,0 +1,462 @@
+---
+title: "Agendipõhine mudeldamine humanitaarteadustes"
+# subtitle: "⚔<br/>with xaringan"
+author: "Andres Kimber"
+institute: "Andmeteadus ja digihumanitaaria (HVEE.00.016)"
+date: "22.09.2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    # css: [ default, metropolis, metropolis-fonts ] #  robot, robot-fonts
+    # nature:
+    #   titleSlideClass: ["left", "middle", "inverse"]
+    #   highlightStyle: github
+    #   highlightLines: true
+    #   countIncrementalSlides: false
+# link-citations: yes
+# bibliography: kirjandus.bib
+# csl: harvard-european-archaeology.csl
+# setwd("C:/teaching/andmeteadus_ja_dh")
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+# library(RefManageR)
+# RefManageR::BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "markdown",
+#            dashed = TRUE)
+# # file.name <- system.file(getwd(), "kirjandus.bib", package = "RefManageR")
+# bib <- RefManageR::ReadBib("C:/teaching/andmeteadus_ja_dh/kirjandus.bib")
+```
+
+
+class: center, middle
+layout: false
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/uV54oa0SyMc?list=PL97MyLoP55qrOlsguBWxeUqAgciktCZy1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+class: inverse, center, middle
+
+# Mis on agendipõhine mudeldamine
+
+
+
+---
+
+# Miks on seda vaja? 
+
+
+---
+# Agendid
+
+.pull-left[
+
+- autonoomnsed
+- heterogeensed
+- indiviid, objekt
+- kindlad omadused
+- kindlad tegevused ja eesmärgid
+]
+
+.pull-right[![agendid](pildid/agendid_Smith.jpg) ![agendid](pildid/agendid_x-files.jpeg)]
+
+---
+# Keskkond
+
+- maastik, kus agendid tegutsevad
+- geomeetriline 
+- võrgustikupõhine
+- reaalset maailma kujutav
+
+---
+# Reeglid
+
+Panevad paika, kuidas agendid omavahel ja keskkonnaga suhestuvad
+---
+# Mõned olulised terminid
+
+- complexity (*keerukus*)
+- emergency (*emergentsus*)
+- deterministic-centralized  mindset
+
+---
+class: center
+
+# Mudeldamise protsess 
+
+![mudeldamise-protsess](pildid/model_process_schulze.png).caption[Mudeldamise protsess (Schulze et al. 2017, jn 1)]
+
+---
+class: center
+# Mudeldamise protsess
+
+![mudeli-loomine](pildid/model_development_romanowska.png).caption[Mudeli loomine (Romanowska 2015, jn 2)]
+
+---
+
+# Valideerimine
+
+.pull-right[![mudeli-valideerimine](url(pildid/model_process_romanowska.png))] 
+```{r}
+
+```
+
+<!-- pildid/model_process_romanowska.png -->
+
+---
+
+class: center
+
+# Otsustusprotsess
+
+![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca & Ellis 2016, jn 3)]
+
+---
+# Agendipõhise mudeldamise tarkvara 
+
+.pull-right[![netlogo](pildid/netlogo.png).caption[Mudeli loomine (Romanowska 2015, jn 1)]]
+
+
+---
+# Vaatame näiteid
+
+
+---
+
+# Varane põllumajandus ja maakatte muutused 
+
+.pull-left[
+- Milline inimtegevus põhjustab maakatte muutuseid?
+- Kui palju inimesi? 
+- Kui intensiivne põllumajandus? 
+- Millised tegurid kõige olulisemad?
+- Kas varasemad tõlgendused on realistlikud? 
+]
+.pull-right[![estagri-gif](pildid/reveals_5.png)]
+
+<!-- --- -->
+
+<!-- ![estagri-gif](pildid/abm_tutulus.gif) -->
+
+---
+
+# Varane põllumajandus ja maakatte muutused
+
+.pull-left[
+![estagri-summ-diff](pildid/estagri_earlier_summ_diff.png)
+.caption[]
+]
+
+.pull-right[
+![estagri-popdens](pildid/estagri_full_area_pop_dens.png)
+.caption[]
+]
+
+---
+
+# Kirjandus
+
+Kaante pildid ja citr'iga lingid.
+Wilensky
+Railsback 
+Gilbert
+
+.pull-left[
+![railsback_grimm](pildid/cover_railsback_grimm_abm.jpg)
+.caption[]
+]
+
+.pull-right[
+![wilensky-rand](pildid/cover_wilensky_rand_abm.jpg)
+.caption[
+]]
+
+---
+
+# Järgmiseks korraks 
+
+.pull-left[
+
+**Lugeda:**
+
+- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing. Lk 2-18. Fail Moodle'is
+
+<!-- **Mõelda** -->
+
+<!-- - Mudelite loomise võimalus oma erialal?  -->
+<!-- - -->
+<!-- -  -->
+
+]
+
+.pull-right[
+
+**Vaadata:**
+<iframe width="213" height="120" src="https://www.youtube.com/embed/VooETfsDErM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="213" height="120" src="https://www.youtube.com/embed/0ZGbIKd0XrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="213" height="120" src="https://www.youtube.com/embed/16W7c0mb-rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+
+
+
+---
+
+# Viited
+
+
+- Epstein, J. M., & Axtell, R. L. (1996). Growing Artificial Societies. Social Science from the Bottom Up. MIT Press.
+- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing
+- Magliocca, N. R., Brown, D. G., & Ellis, E. C. (2013). Exploring Agricultural Livelihood Transitions with an Agent-Based Virtual Laboratory: Global Forces to Local Decision-Making. PLoS ONE, 8(9), e73241. https://doi.org/10.1371/journal.pone.0073241
+- Railsback, S. F., & Grimm, V. (2019). Agent-Based and Individual-Based Modeling: A Practical Introduction (2nd ed.).
+- Romanowska, I. (2015). So You Think You Can Model ? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals. Human Biology Open Access, 87(3), 169–192. https://doi.org/10.13110/humanbiology.87.3.0169??
+- Schulze, J., Müller, B., Groeneveld, J., & Grimm, V. (2017). Agent-based modelling of social-ecological systems: Achievements, challenges, and a way forward. JASSS, 20(2). https://doi.org/10.18564/jasss.3423
+- Wilensky, U., & Rand, W. (2015). An Introduction to Agent-Based Modeling: Modeling Natural, Social, and Engineered Complex Systems with NetLogo. MIT Press
+
+---
+
+# R Code
+
+```{r comment='#'}
+# a boring regression
+fit = lm(dist ~ 1 + speed, data = cars)
+coef(summary(fit))
+dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
+grep('天', dojutsu, value = TRUE)
+```
+
+---
+
+# R Plots
+
+```{r cars, fig.height=4, dev='svg'}
+par(mar = c(4, 4, 1, .1))
+plot(cars, pch = 19, col = 'darkgray', las = 1)
+abline(fit, lwd = 2)
+```
+
+---
+
+# Tables
+
+If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
+
+```{r}
+knitr::kable(head(iris), format = 'html')
+```
+
+---
+
+# HTML Widgets
+
+I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
+
+Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
+
+See the next page for two HTML widgets.
+
+---
+
+```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
+```
+
+---
+
+```{r eval=require('DT'), tidy=FALSE}
+DT::datatable(
+  head(iris, 10),
+  fillContainer = FALSE, options = list(pageLength = 8)
+)
+```
+
+---
+
+# Some Tips
+
+- When you use the "Infinite Moon Reader" addin in RStudio, your R session will be blocked by default. You can click the red button on the right of the console to stop serving the slides, or use the _daemonized_ mode so that it does not block your R session. To do the latter, you can set the option
+
+    ```r
+    options(servr.daemon = TRUE)
+    ```
+    
+    in your current R session, or in `~/.Rprofile` so that it is applied to all future R sessions. I do the latter by myself.
+    
+    To know more about the web server, see the [**servr**](https://github.com/yihui/servr) package.
+
+--
+
+
+---
+
+# Some Tips
+
+- The title slide is created automatically by **xaringan**, but it is just another remark.js slide added before your other slides.
+
+    The title slide is set to `class: center, middle, inverse, title-slide` by default. You can change the classes applied to the title slide with the `titleSlideClass` option of `nature` (`title-slide` is always applied).
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        nature:
+          titleSlideClass: [top, left, inverse]
+    ```
+    
+--
+
+- If you'd like to create your own title slide, disable **xaringan**'s title slide with the `seal = FALSE` option of `moon_reader`.
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        seal: false
+    ```
+
+---
+
+# Some Tips
+
+- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
+
+- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#<<`;
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        nature:
+          highlightLines: true
+    ```
+
+    See examples on the next page.
+
+---
+
+# Some Tips
+
+
+.pull-left[
+An example using a leading `*`:
+
+    ```r
+    if (TRUE) {
+    ** message("Very important!")
+    }
+    ```
+Output:
+```r
+if (TRUE) {
+* message("Very important!")
+}
+```
+
+This is invalid R code, so it is a plain fenced code block that is not executed.
+]
+
+.pull-right[
+An example using `{{}}`:
+
+````
+`r ''````{r tidy=FALSE}
+if (TRUE) {
+*{{ message("Very important!") }}
+}
+```
+````
+Output:
+```{r tidy=FALSE}
+if (TRUE) {
+{{ message("Very important!") }}
+}
+```
+
+It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+]
+
+---
+
+# Some Tips
+
+An example of using the trailing comment `#<<` to highlight lines:
+
+````markdown
+`r ''````{r tidy=FALSE}
+library(ggplot2)
+ggplot(mtcars) + 
+  aes(mpg, disp) + 
+  geom_point() +   #<<
+  geom_smooth()    #<<
+```
+````
+
+Output:
+
+```{r tidy=FALSE, eval=FALSE}
+library(ggplot2)
+ggplot(mtcars) + 
+  aes(mpg, disp) + 
+  geom_point() +   #<<
+  geom_smooth()    #<<
+```
+
+---
+
+# Some Tips
+
+When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
+
+````md
+`r ''````{r, highlight.output=c(1, 3)}
+head(iris)
+```
+````
+
+```{r, highlight.output=c(1, 3), echo=FALSE}
+head(iris)
+```
+
+Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
+
+---
+
+# Some Tips
+
+- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
+
+- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
+
+- Then change the `chakra` option in YAML to point to this file, e.g.
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        chakra: libs/remark-latest.min.js
+    ```
+
+- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
+
+---
+
+# Themes
+
+Don't want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
+
+```{r}
+names(xaringan:::list_css())
+```
+
+---
+
+# Themes
+
+To use a theme, you can specify the `css` option as an array of CSS filenames (without the `.css` extensions), e.g.,
+
+```yaml
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
+```

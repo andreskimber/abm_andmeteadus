@@ -1,0 +1,63 @@
+Näited: 
+
+- Schellingu segregatsioon
+- Metsatulekahju 
+- Linnud
+- liiklusmudel
+
+grupitöö ülesanne 
+
+pärast seda kui olen põhiteema lahti kirjeldanud. Mis on abm (agendid, keskkond, reeglid). 
+Mõelda välja, millised peaksid olema keskkond, agendid ja nende vahelised reeglid. 
+
+teemad:
+
+toidupoes käimine
+
+ajamõõt: 
+tund, minut, nädal, aasta? 
+
+Keskkond: 
+kodu/kooli/töökoha asukoht
+poe asukoht
+teed
+liikumiskiiruse limiit
+
+Agendid:
+
+inimene: 
+toiduvarude hulk
+päevane toiduvarude kulu
+raha
+sobiv aeg (õpilane, vanur, 9-17 töötav inimene)
+liikumisvõimalus või -kiirus (jalgsi, ratas, auto, ühistransport)
+
+pood: 
+varude hulk
+kaupade hind 
+kui palju inimesi mahub poodi
+lahti oleku aeg
+
+Millised mustrid võiksid välja joonistuda?
+
+Millistele küsimustele saaks selle mudeliga vastata?
+Kas hakkavad kaugemal poes käima, kui hinnad mingist piirist madalamad? 
+
+Kuidas seda mudelit valideerida? Milliste andmete peaksime mudelis tekkinud mustreid ja andmeid võrdlema? 
+
+Müügi kellaajad poodidest, poodide uste sisselahti käimise kellaajad, inimeste mobiili asukoha andmed, google maps külastatavuse andme 
+
+Mida need andmed lubavad valideerida ja mida mitte? 
+
+Mida muuta, et muster oleks teistsugune? 
+
+
+evakueerimisplaan:
+
+keskkond: 
+ruumide piirid
+uste hulk
+uste suurus
+hoone suurus
+
+agendid: 
