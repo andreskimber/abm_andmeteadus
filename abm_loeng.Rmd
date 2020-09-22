@@ -257,7 +257,7 @@ Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, ag
 - Kuidas segregatsioonimudel aitab kaasa probleemi lahendamisele? Mida tuleks mudelisse lisada? 
 - Mis on emergentsus (*emergence*)? Kas seda esineb sinu erialal või uurimisteemas?
 - Kuidas vastata sagedasele kriitikale, mille kohaselt ei saa me kunagi päris maailma mudeldada, kuna tegureid on liiga palju?
-
+dassa
 ---
 
 # Viited
