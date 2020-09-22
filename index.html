@@ -6,22 +6,6 @@
     <meta name="author" content="Andres Kimber" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
-    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
-    <script src="libs/jquery/jquery.min.js"></script>
-    <link href="libs/leaflet/leaflet.css" rel="stylesheet" />
-    <script src="libs/leaflet/leaflet.js"></script>
-    <link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
-    <script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
-    <script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
-    <link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
-    <script src="libs/leaflet-binding/leaflet.js"></script>
-    <link href="libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="libs/datatables-binding/datatables.js"></script>
-    <link href="libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="libs/dt-core/js/jquery.dataTables.min.js"></script>
-    <link href="libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
-    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -38,7 +22,7 @@ class: center, middle, inverse, title-slide
 
 
 
-class: center, middle
+class: inverse, center, middle
 layout: false
 
 &lt;iframe width="900" height="506" src="https://www.youtube.com/embed/uV54oa0SyMc?list=PL97MyLoP55qrOlsguBWxeUqAgciktCZy1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
@@ -46,25 +30,54 @@ layout: false
 ---
 class: inverse, center, middle
 
-# Mis on agendipõhine mudeldamine
+# Mis on agendipõhine mudeldamine?
 
+--
 
+Mudel on mingi reaalse süsteemi sihipärane (lihtsustatud) kujutamine.
+
+--
+
+Arvutisimulatsiooni meetod, mis sobib eriti hästi selleks, et uurida ja avastada, kuidas mingi süsteemi koondomadused kerkivad esile selle osade käitumise tulemusena. Need osad on ongi agendid.
+
+--
+
+Arusaam, et suurt osa nähtuseid saab mudeldada kui agente, keskkonda ja nende omavahelisi suhteid.
 
 ---
 
 # Miks on seda vaja? 
 
+.pull-left[
+Võimaldab mudeldada huviobjekte erinevatena.
+
+Võimaldab väljendada käitumisi väga lihtsate reeglite abil.
+
+Protsessi kirjeldamine läbi indiviidi on arusaadavam ning teeb tulemuste kommunikeerimise lihtsamaks.
+
+Simulatsiooni loomine nõuab, et kogu (kontseptuaalne) mudel kirjeldatakse matemaatilisel viisil. 
+
+Võimaldab luua ja arendada ühiskondi alt üles ja nn virtuaalses laboratooriumis.
+
+Aitab testida hüpoteese ning arendada teoreetilisi arusaamu.
+]
+
+.pull-right[![flowchart](pildid/flowchart_brantingham.PNG).caption[Vooskeem e *flowchart* toormaterjali hankimisest kiviajal (Brantingham 2003, jn 5)]]
+
+???
+
+Matemaatiline kirjeldamine aitab oluliselt ka mudelit paremini lahti mõtestada. Aitab välja tuua eelduseid, mida muidu ei tuvastaks.
 
 ---
 # Agendid
 
 .pull-left[
 
-- autonoomnsed
-- heterogeensed
-- indiviid, objekt
-- kindlad omadused
-- kindlad tegevused ja eesmärgid
+- Autonoomnsed
+- Heterogeensed
+- Üksikindiviid, -objekt
+- Kindlad omadused
+- Kindlad tegevused ja eesmärgid
 ]
 
 .pull-right[![agendid](pildid/agendid_Smith.jpg) ![agendid](pildid/agendid_x-files.jpeg)]
@@ -72,23 +85,27 @@ class: inverse, center, middle
 ---
 # Keskkond
 
-- maastik, kus agendid tegutsevad
-- geomeetriline 
-- võrgustikupõhine
-- reaalset maailma kujutav
+.pull-left[
+- Maastik, kus agendid tegutsevad
+- Geomeetriline 
+- Võrgustikupõhine
+- Reaalset maailma kujutav
+]
+
+.pull-right[![environment](pildid/environment.png)
+]
 
 ---
+
 # Reeglid
 
-Panevad paika, kuidas agendid omavahel ja keskkonnaga suhestuvad
----
-# Mõned olulised terminid
+- Panevad paika, kuidas agendid omavahel ja keskkonnaga suhtlevad
+- Tulemusena agendid uuendavad oma olekut ja teevad uusi otsuseid
 
-- complexity (*keerukus*)
-- emergency (*emergentsus*)
-- deterministic-centralized  mindset
+.center[![reeglid](pildid/reeglid.jpg)]
 
 ---
+
 class: center
 
 # Mudeldamise protsess 
@@ -96,43 +113,55 @@ class: center
 ![mudeldamise-protsess](pildid/model_process_schulze.png).caption[Mudeldamise protsess (Schulze et al. 2017, jn 1)]
 
 ---
+
 class: center
+
 # Mudeldamise protsess
 
 ![mudeli-loomine](pildid/model_development_romanowska.png).caption[Mudeli loomine (Romanowska 2015, jn 2)]
 
 ---
 
+class: center
+
 # Valideerimine
 
-.pull-right[![mudeli-valideerimine](url(pildid/model_process_romanowska.png))] 
-
-
-&lt;!-- pildid/model_process_romanowska.png --&gt;
+![mudeli-valideerimine](pildid/model_process_romanowska.png).caption[Andmeanalüüsi ja simulatsioonide vaheline suhe (Romanowska 2015, jn 1)]
 
 ---
-
-class: center
 
 # Otsustusprotsess
 
-![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca &amp; Ellis 2016, jn 3)]
+.center[![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca &amp; Ellis 2016, jn 3)]]
 
 ---
-# Agendipõhise mudeldamise tarkvara 
+# Agendipõhise mudeldamise tarkvara Netlogo
 
-.pull-right[![netlogo](pildid/netlogo.png).caption[Mudeli loomine (Romanowska 2015, jn 1)]]
+.pull-left[
+- agendipõhiseks mudeldamiseks loodud
+- lihtsasti õpitav
+- koodipõhine
+- vabavara
+
+![netlogo_kood](pildid/netlogo_interface.PNG)
+]
+
+.pull-right[ ![netlogo_kood](pildid/netlogo_kood.PNG)]
 
 
 ---
 # Vaatame näiteid
 
+- Metsapõleng - kuidas sõltub metsapõlengu ulatus metsatiheduses ja leviku tõenäosusest
+- Pidu - kuidas tekivad erineva soolise kooslusega grupid vastavalt liikmete tolerantsile vastassoo suhtes 
+- [Schellingu segregatsiooni mudel](https://en.wikipedia.org/wiki/Schelling%27s_model_of_segregation) - kuidas mõjutab soov elada endaga sarnaste läheduses segregeerumist linnades 
 
 ---
 
 # Varane põllumajandus ja maakatte muutused 
 
 .pull-left[
+- Mudeli tutvustus [arheoloogia aastakirja Tutulus Facebooki lehel](https://www.facebook.com/ajakiritutulus/videos/1552874024868993/?extid=RS7z8c2qGriCW9Yr)
 - Milline inimtegevus põhjustab maakatte muutuseid?
 - Kui palju inimesi? 
 - Kui intensiivne põllumajandus? 
@@ -163,36 +192,43 @@ class: center
 
 # Kirjandus
 
-Kaante pildid ja citr'iga lingid.
-Wilensky
-Railsback 
-Gilbert
-
 .pull-left[
 ![railsback_grimm](pildid/cover_railsback_grimm_abm.jpg)
-.caption[]
+.caption[Väga laialt kasutatud õpik]
 ]
 
 .pull-right[
 ![wilensky-rand](pildid/cover_wilensky_rand_abm.jpg)
-.caption[
+.caption[Netlogo looja õpik tarkvara kasutamiseks
 ]]
 
 ---
 
-# Järgmiseks korraks 
+# Kirjandus 
+
+.pull-left[![epstein](pildid/cover_epstein_axtell.jpg).caption[Virtuaalsete ühiskondade loomise alustekst]]
+
+.pull-right[![gilber](pildid/cover_gilbert_abm.jpg).caption[Lühike meetodi ülevaade]]
+
+---
+
+# Rühmatöö
+
+Võib teha üksi või kaks kuni kolm inimest koos. 
+
+Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, agendid ja nende vahelised reeglid, ajamõõde. Eesmärk mõista toidupoodide külastamise aegasid? Mis küsimusi saame veel küsida?
+
+Teine võimalus. Loome kontseptuaalse mudeli oravate seemnete ja pähklite kogumisest, millest rääkisime loengus. Oravad nimelt koguvad toitu, peidavad seda, teesklevad peitmist, unustavad, kuhu nad on toitu peitnud ning otsivad seda nn tõenäolistest kohtadest. Kui palju peaks oravad igale tegevusele keskenduma? Milliste parameetrite ja nende väärtuste juures on oravad siiani elus püsinud?  
+
+---
+
+# Järgmiseks seminariks (25.09) 
 
 .pull-left[
 
 **Lugeda:**
 
-- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing. Lk 2-18. Fail Moodle'is
-
-&lt;!-- **Mõelda** --&gt;
-
-&lt;!-- - Mudelite loomise võimalus oma erialal?  --&gt;
-&lt;!-- - --&gt;
-&lt;!-- -  --&gt;
+- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing. Lk 2-18. Fail Moodle'is. Näidetest lugeda 1.2.1 Urban Models ja 1.2.2 Opinion Dynamics
 
 ]
 
@@ -204,16 +240,25 @@ Gilbert
 &lt;iframe width="213" height="120" src="https://www.youtube.com/embed/16W7c0mb-rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 ]
 
+---
 
+# Järgmiseks seminariks (25.09) 
 
+**Mõelda:**
+
+- Kuidas segregatsioonimudel aitab kaasa probleemi lahendamisele? Mida tuleks mudelisse lisada? 
+- Mis on emergentsus (*emergence*)? Kas seda esineb sinu erialal või uurimisteemas?
+- Kuidas panustab agendipõhine mudeldamine humanitaarteaduste metodoloogilisse arengusse? 
+- Mudelite loomise võimalus oma erialal? Mis andmed ja küsimused?
+- Kuidas vastata sagedasele kriitikale, mille kohaselt ei saa me kunagi päris maailma mudeldada, kuna tegureid on liiga palju?
 
 ---
 
 # Viited
 
-
+- Brantingham, P. J. (2003). A Neutral Model of Stone Raw Material Procurement. American Antiquity, 68(3), 487–509. https://doi.org/10.2307/3557105
 - Epstein, J. M., &amp; Axtell, R. L. (1996). Growing Artificial Societies. Social Science from the Bottom Up. MIT Press.
-- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing
+- Gilbert, N. (2008). Agent-Based Models (2nd ed.). Sage Publishing
 - Magliocca, N. R., Brown, D. G., &amp; Ellis, E. C. (2013). Exploring Agricultural Livelihood Transitions with an Agent-Based Virtual Laboratory: Global Forces to Local Decision-Making. PLoS ONE, 8(9), e73241. https://doi.org/10.1371/journal.pone.0073241
 - Railsback, S. F., &amp; Grimm, V. (2019). Agent-Based and Individual-Based Modeling: A Practical Introduction (2nd ed.).
 - Romanowska, I. (2015). So You Think You Can Model ? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals. Human Biology Open Access, 87(3), 169–192. https://doi.org/10.13110/humanbiology.87.3.0169??
@@ -222,354 +267,14 @@ Gilbert
 
 ---
 
-# R Code
+class: inverse, middle, center
 
 
-```r
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
-```
+# Tänan tähelepanu eest! 
 
-```
-#               Estimate Std. Error   t value     Pr(&gt;|t|)
-# (Intercept) -17.579095  6.7584402 -2.601058 1.231882e-02
-# speed         3.932409  0.4155128  9.463990 1.489836e-12
-```
+andres.kimber@ut.ee
 
-```r
-dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
-grep('天', dojutsu, value = TRUE)
-```
-
-```
-# character(0)
-```
-
----
-
-# R Plots
-
-
-```r
-par(mar = c(4, 4, 1, .1))
-plot(cars, pch = 19, col = 'darkgray', las = 1)
-abline(fit, lwd = 2)
-```
-
-![](abm_loeng_files/figure-html/cars-1.svg)&lt;!-- --&gt;
-
----
-
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-
-```r
-knitr::kable(head(iris), format = 'html')
-```
-
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:right;"&gt; Sepal.Length &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; Sepal.Width &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; Petal.Length &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; Petal.Width &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; Species &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 5.1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 4.9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 4.7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.2 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1.3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 4.6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1.5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 5.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 5.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1.7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.4 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
----
-
-# HTML Widgets
-
-I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
-
-Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
-
-See the next page for two HTML widgets.
-
----
-
-
-```r
-library(leaflet)
-leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
-```
-
-<div id="htmlwidget-9f82492f8b857458e822" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9f82492f8b857458e822">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
-
----
-
-
-```r
-DT::datatable(
-  head(iris, 10),
-  fillContainer = FALSE, options = list(pageLength = 8)
-)
-```
-
-<div id="htmlwidget-a67dfe7600f940988074" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a67dfe7600f940988074">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-
----
-
-# Some Tips
-
-- When you use the "Infinite Moon Reader" addin in RStudio, your R session will be blocked by default. You can click the red button on the right of the console to stop serving the slides, or use the _daemonized_ mode so that it does not block your R session. To do the latter, you can set the option
-
-    ```r
-    options(servr.daemon = TRUE)
-    ```
-    
-    in your current R session, or in `~/.Rprofile` so that it is applied to all future R sessions. I do the latter by myself.
-    
-    To know more about the web server, see the [**servr**](https://github.com/yihui/servr) package.
-
---
-
-
----
-
-# Some Tips
-
-- The title slide is created automatically by **xaringan**, but it is just another remark.js slide added before your other slides.
-
-    The title slide is set to `class: center, middle, inverse, title-slide` by default. You can change the classes applied to the title slide with the `titleSlideClass` option of `nature` (`title-slide` is always applied).
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          titleSlideClass: [top, left, inverse]
-    ```
-    
---
-
-- If you'd like to create your own title slide, disable **xaringan**'s title slide with the `seal = FALSE` option of `moon_reader`.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        seal: false
-    ```
-
----
-
-# Some Tips
-
-- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
-
-- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#&lt;&lt;`;
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          highlightLines: true
-    ```
-
-    See examples on the next page.
-
----
-
-# Some Tips
-
-
-.pull-left[
-An example using a leading `*`:
-
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
-
-This is invalid R code, so it is a plain fenced code block that is not executed.
-]
-
-.pull-right[
-An example using `{{}}`:
-
-````
-```{r tidy=FALSE}
-if (TRUE) {
-*{{ message("Very important!") }}
-}
-```
-````
-Output:
-
-```r
-if (TRUE) {
-* message("Very important!") 
-}
-```
-
-```
-## Very important!
-```
-
-It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
-]
-
----
-
-# Some Tips
-
-An example of using the trailing comment `#&lt;&lt;` to highlight lines:
-
-````markdown
-```{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #&lt;&lt;
-  geom_smooth()    #&lt;&lt;
-```
-````
-
-Output:
-
-
-```r
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-* geom_point() +
-* geom_smooth()
-```
-
----
-
-# Some Tips
-
-When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
-
-````md
-```{r, highlight.output=c(1, 3)}
-head(iris)
-```
-````
-
-
-```
-*##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-## 1          5.1         3.5          1.4         0.2  setosa
-*## 2          4.9         3.0          1.4         0.2  setosa
-## 3          4.7         3.2          1.3         0.2  setosa
-## 4          4.6         3.1          1.5         0.2  setosa
-## 5          5.0         3.6          1.4         0.2  setosa
-## 6          5.4         3.9          1.7         0.4  setosa
-```
-
-Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
-
----
-
-# Some Tips
-
-- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
-
-- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
-
-- Then change the `chakra` option in YAML to point to this file, e.g.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        chakra: libs/remark-latest.min.js
-    ```
-
-- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
-
----
-
-# Themes
-
-Don't want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
-
-
-```r
-names(xaringan:::list_css())
-```
-
-```
-##  [1] "chocolate-fonts"  "chocolate"        "default-fonts"    "default"         
-##  [5] "duke-blue"        "fc-fonts"         "fc"               "hygge-duke"      
-##  [9] "hygge"            "ki-fonts"         "ki"               "kunoichi"        
-## [13] "lucy-fonts"       "lucy"             "metropolis-fonts" "metropolis"      
-## [17] "middlebury-fonts" "middlebury"       "ninjutsu"         "rladies-fonts"   
-## [21] "rladies"          "robot-fonts"      "robot"            "rutgers-fonts"   
-## [25] "rutgers"          "shinobi"          "tamu-fonts"       "tamu"            
-## [29] "uo-fonts"         "uo"               "uol-fonts"        "uol"
-```
-
----
-
-# Themes
-
-To use a theme, you can specify the `css` option as an array of CSS filenames (without the `.css` extensions), e.g.,
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts]
-```
+twitter.com/andreskimber
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
