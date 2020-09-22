@@ -28,7 +28,7 @@ options(htmltools.dir.version = FALSE)
 ```
 
 
-class: center, middle
+class: inverse, center, middle
 layout: false
 
 <iframe width="900" height="506" src="https://www.youtube.com/embed/uV54oa0SyMc?list=PL97MyLoP55qrOlsguBWxeUqAgciktCZy1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -39,9 +39,11 @@ class: inverse, center, middle
 # Mis on agendipõhine mudeldamine?
 
 --
+
 Mudel on mingi reaalse süsteemi sihipärane (lihtsustatud) kujutamine.
 
 --
+
 Arvutisimulatsiooni meetod, mis sobib eriti hästi selleks, et uurida ja avastada, kuidas mingi süsteemi koondomadused kerkivad esile selle osade käitumise tulemusena. Need osad on ongi agendid.
 
 --
@@ -106,17 +108,10 @@ Matemaatiline kirjeldamine aitab oluliselt ka mudelit paremini lahti mõtestada.
 - Panevad paika, kuidas agendid omavahel ja keskkonnaga suhtlevad
 - Tulemusena agendid uuendavad oma olekut ja teevad uusi otsuseid
 
-![reeglid](pildid/reeglid.jpg)
+.center[![reeglid](pildid/reeglid.jpg)]
 
 ---
-<!-- # Mõned olulised terminid -->
 
-<!-- - complexity (*keerukus*) -->
-<!-- - emergency (*emergentsus*) -->
-<!-- - deterministic-centralized  mindset -->
-<!-- - emulatsioon ja simulatsioon -->
-
-<!-- --- -->
 class: center
 
 # Mudeldamise protsess 
@@ -124,6 +119,7 @@ class: center
 ![mudeldamise-protsess](pildid/model_process_schulze.png).caption[Mudeldamise protsess (Schulze et al. 2017, jn 1)]
 
 ---
+
 class: center
 
 # Mudeldamise protsess
@@ -131,20 +127,18 @@ class: center
 ![mudeli-loomine](pildid/model_development_romanowska.png).caption[Mudeli loomine (Romanowska 2015, jn 2)]
 
 ---
+
 class: center
 
 # Valideerimine
 
-![mudeli-valideerimine](pildid/model_process_romanowska.png)
-
+![mudeli-valideerimine](pildid/model_process_romanowska.png).caption[Andmeanalüüsi ja simulatsioonide vaheline suhe (Romanowska 2015, jn 1)]
 
 ---
 
-class: center, middle
-
 # Otsustusprotsess
 
-![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca & Ellis 2016, jn 3)]
+.center[![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca & Ellis 2016, jn 3)]]
 
 ---
 # Agendipõhise mudeldamise tarkvara Netlogo
@@ -164,15 +158,16 @@ class: center, middle
 ---
 # Vaatame näiteid
 
-- Metsapõleng
-- Pidu
-- Segregatsioon
+- Metsapõleng - kuidas sõltub metsapõlengu ulatus metsatiheduses ja leviku tõenäosusest
+- Pidu - kuidas tekivad erineva soolise kooslusega grupid vastavalt liikmete tolerantsile vastassoo suhtes 
+- [Schellingu segregatsiooni mudel](https://en.wikipedia.org/wiki/Schelling%27s_model_of_segregation) - kuidas mõjutab soov elada endaga sarnaste läheduses segregeerumist linnades 
 
 ---
 
 # Varane põllumajandus ja maakatte muutused 
 
 .pull-left[
+- Mudeli tutvustus [arheoloogia aastakirja Tutulus Facebooki lehel](https://www.facebook.com/ajakiritutulus/videos/1552874024868993/?extid=RS7z8c2qGriCW9Yr)
 - Milline inimtegevus põhjustab maakatte muutuseid?
 - Kui palju inimesi? 
 - Kui intensiivne põllumajandus? 
@@ -203,20 +198,23 @@ class: center, middle
 
 # Kirjandus
 
-Kaante pildid ja citr'iga lingid.
-Wilensky
-Railsback 
-Gilbert
-
 .pull-left[
 ![railsback_grimm](pildid/cover_railsback_grimm_abm.jpg)
-.caption[]
+.caption[Väga laialt kasutatud õpik]
 ]
 
 .pull-right[
 ![wilensky-rand](pildid/cover_wilensky_rand_abm.jpg)
-.caption[
+.caption[Netlogo looja õpik tarkvara kasutamiseks
 ]]
+
+---
+
+# Kirjandus 
+
+.pull-left[![epstein](pildid/cover_epstein_axtell.jpg).caption[Virtuaalsete ühiskondade loomise alustekst]]
+
+.pull-right[![gilber](pildid/cover_gilbert_abm.jpg).caption[Lühike meetodi ülevaade]]
 
 ---
 
@@ -226,9 +224,11 @@ Võib teha üksi või kaks kuni kolm inimest koos.
 
 Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, agendid ja nende vahelised reeglid, ajamõõde. Eesmärk mõista toidupoodide külastamise aegasid? Mis küsimusi saame veel küsida?
 
+Teine võimalus. Loome kontseptuaalse mudeli oravate seemnete ja pähklite kogumisest, millest rääkisime loengus. Oravad nimelt koguvad toitu, peidavad seda, teesklevad peitmist, unustavad, kuhu nad on toitu peitnud ning otsivad seda nn tõenäolistest kohtadest. Kui palju peaks oravad igale tegevusele keskenduma? Milliste parameetrite ja nende väärtuste juures on oravad siiani elus püsinud?  
+
 ---
 
-# Järgmiseks korraks 
+# Järgmiseks seminariks (25.09) 
 
 .pull-left[
 
@@ -248,23 +248,23 @@ Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, ag
 
 ---
 
-# Järgmiseks korraks 
+# Järgmiseks seminariks (25.09) 
 
 **Mõelda:**
 
-- Mudelite loomise võimalus oma erialal? Mis andmed ja küsimused? 
-- Kuidas panustab agendipõhine mudeldamine humanitaarteaduste metodoloogilisse arengusse? 
 - Kuidas segregatsioonimudel aitab kaasa probleemi lahendamisele? Mida tuleks mudelisse lisada? 
 - Mis on emergentsus (*emergence*)? Kas seda esineb sinu erialal või uurimisteemas?
+- Kuidas panustab agendipõhine mudeldamine humanitaarteaduste metodoloogilisse arengusse? 
+- Mudelite loomise võimalus oma erialal? Mis andmed ja küsimused?
 - Kuidas vastata sagedasele kriitikale, mille kohaselt ei saa me kunagi päris maailma mudeldada, kuna tegureid on liiga palju?
-dassa
+
 ---
 
 # Viited
 
 - Brantingham, P. J. (2003). A Neutral Model of Stone Raw Material Procurement. American Antiquity, 68(3), 487–509. https://doi.org/10.2307/3557105
 - Epstein, J. M., & Axtell, R. L. (1996). Growing Artificial Societies. Social Science from the Bottom Up. MIT Press.
-- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing
+- Gilbert, N. (2008). Agent-Based Models (2nd ed.). Sage Publishing
 - Magliocca, N. R., Brown, D. G., & Ellis, E. C. (2013). Exploring Agricultural Livelihood Transitions with an Agent-Based Virtual Laboratory: Global Forces to Local Decision-Making. PLoS ONE, 8(9), e73241. https://doi.org/10.1371/journal.pone.0073241
 - Railsback, S. F., & Grimm, V. (2019). Agent-Based and Individual-Based Modeling: A Practical Introduction (2nd ed.).
 - Romanowska, I. (2015). So You Think You Can Model ? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals. Human Biology Open Access, 87(3), 169–192. https://doi.org/10.13110/humanbiology.87.3.0169??
@@ -273,13 +273,11 @@ dassa
 
 ---
 
-class: middle, center
+class: inverse, middle, center
 
 
 # Tänan tähelepanu eest! 
 
 andres.kimber@ut.ee
 
-@andreskimber
-
----
+twitter.com/andreskimber
