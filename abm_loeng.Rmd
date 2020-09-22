@@ -245,7 +245,7 @@ Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, ag
 <iframe width="213" height="120" src="https://www.youtube.com/embed/0ZGbIKd0XrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="213" height="120" src="https://www.youtube.com/embed/16W7c0mb-rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
-dsa 
+
 ---
 
 # Järgmiseks korraks 
