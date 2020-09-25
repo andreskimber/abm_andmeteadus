@@ -218,16 +218,6 @@ class: center
 
 ---
 
-# Rühmatöö
-
-Võib teha üksi või kaks kuni kolm inimest koos. 
-
-Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, agendid ja nende vahelised reeglid, ajamõõde. Eesmärk mõista toidupoodide külastamise aegasid? Mis küsimusi saame veel küsida?
-
-Teine võimalus. Loome kontseptuaalse mudeli oravate seemnete ja pähklite kogumisest, millest rääkisime loengus. Oravad nimelt koguvad toitu, peidavad seda, teesklevad peitmist, unustavad, kuhu nad on toitu peitnud ning otsivad seda nn tõenäolistest kohtadest. Kui palju peaks oravad igale tegevusele keskenduma? Milliste parameetrite ja nende väärtuste juures on oravad siiani elus püsinud?  
-
----
-
 # Järgmiseks seminariks (25.09) 
 
 .pull-left[
@@ -277,6 +267,85 @@ class: inverse, middle, center
 
 
 # Tänan tähelepanu eest! 
+
+andres.kimber@ut.ee
+
+twitter.com/andreskimber
+
+---
+
+class: inverse, center, middle
+
+# Agendipõhine mudeldamine humanitaarteadustes 
+## Seminar
+
+### Andres Kimber
+
+### Andmeteadus ja digihumanitaaria (HVEE.00.016)
+
+### 25.09.2020
+
+---
+
+# Proovime Netlogo
+
+Otsige Netlogo veebiversioonist [netlogoweb.org](https://www.netlogoweb.org/) mudelid, mis seotud teie huvide ja erialadega.
+
+.pull-left[
+1. Lugege, mida mudel teeb (*Model Info*)
+2. Jooksutage mudelit (tavaliselt *Setup -> Go*)
+3. Muutke parameetrite väärtusi ja jooksutage uuesti mõned korrad. Mis muutub? 
+4. Tutvustage mudelit paari lausega!
+]
+
+.pull-right[
+Mõned soovitused 
+
+- kasuta otsingus *sample models/social science* või *sample models/networks*
+- filosoofiline [Signaling Game](https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Philosophy/Signaling%20Game.nlogo)
+- lähikondsete mõju hääletamise uurib [Voting model](https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Social%20Science/Voting.nlogo)
+- vaadatud videoga sarnane [Genetic drift & Natural selection](https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Curricular%20Models/GenEvo/GenEvo%203%20Genetic%20Drift%20and%20Natural%20Selection.nlogo) 
+- haiguste levikust [epiDEM Basic](https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Curricular%20Models/epiDEM/epiDEM%20Basic.nlogo) ja [epiDEM Travel & Control](https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Curricular%20Models/epiDEM/epiDEM%20Travel%20and%20Control.nlogo)
+]
+
+---
+
+# Küsimused 
+
+- Kuidas segregatsioonimudel aitab kaasa probleemi lahendamisele? Mida tuleks mudelisse lisada? 
+- Mis on emergentsus (*emergence*)? Kas seda esineb sinu erialal või uurimisteemas?
+- Kuidas panustab agendipõhine mudeldamine humanitaarteaduste metodoloogilisse arengusse? 
+- Mudelite loomise võimalus oma erialal? Mis andmed ja küsimused?
+- Kuidas vastata sagedasele kriitikale, mille kohaselt ei saa me kunagi päris maailma mudeldada, kuna tegureid on liiga palju?
+
+---
+
+# Rühmatöö
+
+Loome kontseptuaalse mudeli. Eesmärk välja mõelda mudeli uurimisküsimus, keskkond, agendid, nende vahelised reeglid, olulised parameetrid ja vajadusel ajamõõde ehk mida tähistab üks samm mudelis.  Võib teha üksi või kaks kuni kolm inimest koos.
+
+Teemad
+
+1. Poes käimine. Eesmärk mõista toidupoodide külastamise aegasid? Inimeste hulka poes erinevatel aegadel? Mis küsimusi saame veel küsida?
+2. Oravate toidukogumine, millest rääkisime loengus. Oravad nimelt koguvad toitu, peidavad seda, teesklevad peitmist, unustavad, kuhu nad on toitu peitnud ning otsivad seda nn tõenäolistest kohtadest. Kui palju peaks oravad igale tegevusele keskenduma? Milliste parameetrite ja nende väärtuste juures on oravad siiani elus püsinud?  
+3. Ideede, kuulujuttude, moe või laensõnade levik.
+4. Vabalt valitud teema, mis huvitab rühmaliikmeid.
+
+
+Pange oma mudel kirja [Padleti lehele](https://padlet.com/kimberandres/hji1xbocyaz68ypa).
+
+---
+# Kirjandus 
+
+- Historical Social Research erinumber [Agent-Based Modeling in Social Science, History, and Philosophy](https://www.gesis.org/en/hsr/full-text-archive/2018/431-agent-based-modeling-in-social-science-history-and-philosophy)
+- Gavin, M. (2014). Agent-Based Modeling and Historical Simulation. Digital Humanities Quarterly, 008(4).
+
+---
+
+class: inverse, middle, center
+
+
+# Tänan tähelepanu ja arutlemise eest! 
 
 andres.kimber@ut.ee
 
