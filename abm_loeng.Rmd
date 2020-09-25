@@ -14,13 +14,8 @@ output:
     # css: [ default, metropolis, metropolis-fonts ] #  robot, robot-fonts
     # nature:
     #   titleSlideClass: ["left", "middle", "inverse"]
-    #   highlightStyle: github
-    #   highlightLines: true
-    #   countIncrementalSlides: false
-# link-citations: yes
-# bibliography: kirjandus.bib
-# csl: harvard-european-archaeology.csl
-# setwd("C:/teaching/andmeteadus_ja_dh")
+
+# publitseerimine github pages lehel: https://www.aj2duncan.com/blog/hosting-xaringan-slides-using-github-pages/
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +28,7 @@ options(htmltools.dir.version = FALSE)
 ```
 
 
-class: center, middle
+class: inverse, center, middle
 layout: false
 
 <iframe width="900" height="506" src="https://www.youtube.com/embed/uV54oa0SyMc?list=PL97MyLoP55qrOlsguBWxeUqAgciktCZy1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -41,25 +36,54 @@ layout: false
 ---
 class: inverse, center, middle
 
-# Mis on agendipõhine mudeldamine
+# Mis on agendipõhine mudeldamine?
 
+--
 
+Mudel on mingi reaalse süsteemi sihipärane (lihtsustatud) kujutamine.
+
+--
+
+Arvutisimulatsiooni meetod, mis sobib eriti hästi selleks, et uurida ja avastada, kuidas mingi süsteemi koondomadused kerkivad esile selle osade käitumise tulemusena. Need osad on ongi agendid.
+
+--
+
+Arusaam, et suurt osa nähtuseid saab mudeldada kui agente, keskkonda ja nende omavahelisi suhteid.
 
 ---
 
 # Miks on seda vaja? 
 
+.pull-left[
+Võimaldab mudeldada huviobjekte erinevatena.
+
+Võimaldab väljendada käitumisi väga lihtsate reeglite abil.
+
+Protsessi kirjeldamine läbi indiviidi on arusaadavam ning teeb tulemuste kommunikeerimise lihtsamaks.
+
+Simulatsiooni loomine nõuab, et kogu (kontseptuaalne) mudel kirjeldatakse matemaatilisel viisil. 
+
+Võimaldab luua ja arendada ühiskondi alt üles ja nn virtuaalses laboratooriumis.
+
+Aitab testida hüpoteese ning arendada teoreetilisi arusaamu.
+]
+
+.pull-right[![flowchart](pildid/flowchart_brantingham.PNG).caption[Vooskeem e *flowchart* toormaterjali hankimisest kiviajal (Brantingham 2003, jn 5)]]
+
+???
+
+Matemaatiline kirjeldamine aitab oluliselt ka mudelit paremini lahti mõtestada. Aitab välja tuua eelduseid, mida muidu ei tuvastaks.
 
 ---
 # Agendid
 
 .pull-left[
 
-- autonoomnsed
-- heterogeensed
-- indiviid, objekt
-- kindlad omadused
-- kindlad tegevused ja eesmärgid
+- Autonoomnsed
+- Heterogeensed
+- Üksikindiviid, -objekt
+- Kindlad omadused
+- Kindlad tegevused ja eesmärgid
 ]
 
 .pull-right[![agendid](pildid/agendid_Smith.jpg) ![agendid](pildid/agendid_x-files.jpeg)]
@@ -67,23 +91,27 @@ class: inverse, center, middle
 ---
 # Keskkond
 
-- maastik, kus agendid tegutsevad
-- geomeetriline 
-- võrgustikupõhine
-- reaalset maailma kujutav
+.pull-left[
+- Maastik, kus agendid tegutsevad
+- Geomeetriline 
+- Võrgustikupõhine
+- Reaalset maailma kujutav
+]
+
+.pull-right[![environment](pildid/environment.png)
+]
 
 ---
+
 # Reeglid
 
-Panevad paika, kuidas agendid omavahel ja keskkonnaga suhestuvad
----
-# Mõned olulised terminid
+- Panevad paika, kuidas agendid omavahel ja keskkonnaga suhtlevad
+- Tulemusena agendid uuendavad oma olekut ja teevad uusi otsuseid
 
-- complexity (*keerukus*)
-- emergency (*emergentsus*)
-- deterministic-centralized  mindset
+.center[![reeglid](pildid/reeglid.jpg)]
 
 ---
+
 class: center
 
 # Mudeldamise protsess 
@@ -91,45 +119,55 @@ class: center
 ![mudeldamise-protsess](pildid/model_process_schulze.png).caption[Mudeldamise protsess (Schulze et al. 2017, jn 1)]
 
 ---
+
 class: center
+
 # Mudeldamise protsess
 
 ![mudeli-loomine](pildid/model_development_romanowska.png).caption[Mudeli loomine (Romanowska 2015, jn 2)]
 
 ---
 
+class: center
+
 # Valideerimine
 
-.pull-right[![mudeli-valideerimine](url(pildid/model_process_romanowska.png))] 
-```{r}
-
-```
-
-<!-- pildid/model_process_romanowska.png -->
+![mudeli-valideerimine](pildid/model_process_romanowska.png).caption[Andmeanalüüsi ja simulatsioonide vaheline suhe (Romanowska 2015, jn 1)]
 
 ---
-
-class: center
 
 # Otsustusprotsess
 
-![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca & Ellis 2016, jn 3)]
+.center[![decision-making](pildid/decision_making_magliocca2016.png).caption[Agentide otsuste tegemise raamistik (Magliocca & Ellis 2016, jn 3)]]
 
 ---
-# Agendipõhise mudeldamise tarkvara 
+# Agendipõhise mudeldamise tarkvara Netlogo
 
-.pull-right[![netlogo](pildid/netlogo.png).caption[Mudeli loomine (Romanowska 2015, jn 1)]]
+.pull-left[
+- agendipõhiseks mudeldamiseks loodud
+- lihtsasti õpitav
+- koodipõhine
+- vabavara
+
+![netlogo_kood](pildid/netlogo_interface.PNG)
+]
+
+.pull-right[ ![netlogo_kood](pildid/netlogo_kood.PNG)]
 
 
 ---
 # Vaatame näiteid
 
+- Metsapõleng - kuidas sõltub metsapõlengu ulatus metsatiheduses ja leviku tõenäosusest
+- Pidu - kuidas tekivad erineva soolise kooslusega grupid vastavalt liikmete tolerantsile vastassoo suhtes 
+- [Schellingu segregatsiooni mudel](https://en.wikipedia.org/wiki/Schelling%27s_model_of_segregation) - kuidas mõjutab soov elada endaga sarnaste läheduses segregeerumist linnades 
 
 ---
 
 # Varane põllumajandus ja maakatte muutused 
 
 .pull-left[
+- Mudeli tutvustus [arheoloogia aastakirja Tutulus Facebooki lehel](https://www.facebook.com/ajakiritutulus/videos/1552874024868993/?extid=RS7z8c2qGriCW9Yr)
 - Milline inimtegevus põhjustab maakatte muutuseid?
 - Kui palju inimesi? 
 - Kui intensiivne põllumajandus? 
@@ -160,23 +198,19 @@ class: center
 
 # Kirjandus
 
-Kaante pildid ja citr'iga lingid.
-Wilensky
-Railsback 
-Gilbert
-
 .pull-left[
 ![railsback_grimm](pildid/cover_railsback_grimm_abm.jpg)
-.caption[]
+.caption[Väga laialt kasutatud õpik]
 ]
 
 .pull-right[
 ![wilensky-rand](pildid/cover_wilensky_rand_abm.jpg)
-.caption[
+.caption[Netlogo looja õpik tarkvara kasutamiseks
 ]]
 
 ---
 
+<<<<<<< HEAD
 # Järgmiseks korraks 
 
 .pull-left[
@@ -280,183 +314,76 @@ DT::datatable(
 # Some Tips
 
 - When you use the "Infinite Moon Reader" addin in RStudio, your R session will be blocked by default. You can click the red button on the right of the console to stop serving the slides, or use the _daemonized_ mode so that it does not block your R session. To do the latter, you can set the option
+=======
+# Kirjandus 
+>>>>>>> gh-pages
 
-    ```r
-    options(servr.daemon = TRUE)
-    ```
-    
-    in your current R session, or in `~/.Rprofile` so that it is applied to all future R sessions. I do the latter by myself.
-    
-    To know more about the web server, see the [**servr**](https://github.com/yihui/servr) package.
+.pull-left[![epstein](pildid/cover_epstein_axtell.jpg).caption[Virtuaalsete ühiskondade loomise alustekst]]
 
---
-
+.pull-right[![gilber](pildid/cover_gilbert_abm.jpg).caption[Lühike meetodi ülevaade]]
 
 ---
 
-# Some Tips
+# Rühmatöö
 
-- The title slide is created automatically by **xaringan**, but it is just another remark.js slide added before your other slides.
+Võib teha üksi või kaks kuni kolm inimest koos. 
 
-    The title slide is set to `class: center, middle, inverse, title-slide` by default. You can change the classes applied to the title slide with the `titleSlideClass` option of `nature` (`title-slide` is always applied).
+Loome kontseptuaalse mudeli poes käimisest. Millised peaksid olema keskkond, agendid ja nende vahelised reeglid, ajamõõde. Eesmärk mõista toidupoodide külastamise aegasid? Mis küsimusi saame veel küsida?
 
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          titleSlideClass: [top, left, inverse]
-    ```
-    
---
-
-- If you'd like to create your own title slide, disable **xaringan**'s title slide with the `seal = FALSE` option of `moon_reader`.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        seal: false
-    ```
+Teine võimalus. Loome kontseptuaalse mudeli oravate seemnete ja pähklite kogumisest, millest rääkisime loengus. Oravad nimelt koguvad toitu, peidavad seda, teesklevad peitmist, unustavad, kuhu nad on toitu peitnud ning otsivad seda nn tõenäolistest kohtadest. Kui palju peaks oravad igale tegevusele keskenduma? Milliste parameetrite ja nende väärtuste juures on oravad siiani elus püsinud?  
 
 ---
 
-# Some Tips
-
-- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
-
-- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#<<`;
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          highlightLines: true
-    ```
-
-    See examples on the next page.
-
----
-
-# Some Tips
-
+# Järgmiseks seminariks (25.09) 
 
 .pull-left[
-An example using a leading `*`:
 
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
+**Lugeda:**
 
-This is invalid R code, so it is a plain fenced code block that is not executed.
+- Nigel Gilbert. (2008). Agent-Based Models (2nd ed.). Sage Publishing. Lk 2-18. Fail Moodle'is. Näidetest lugeda 1.2.1 Urban Models ja 1.2.2 Opinion Dynamics
+
 ]
 
 .pull-right[
-An example using `{{}}`:
 
-````
-`r ''````{r tidy=FALSE}
-if (TRUE) {
-*{{ message("Very important!") }}
-}
-```
-````
-Output:
-```{r tidy=FALSE}
-if (TRUE) {
-{{ message("Very important!") }}
-}
-```
-
-It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+**Vaadata:**
+<iframe width="213" height="120" src="https://www.youtube.com/embed/VooETfsDErM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="213" height="120" src="https://www.youtube.com/embed/0ZGbIKd0XrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="213" height="120" src="https://www.youtube.com/embed/16W7c0mb-rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
 ---
 
-# Some Tips
+# Järgmiseks seminariks (25.09) 
 
-An example of using the trailing comment `#<<` to highlight lines:
+**Mõelda:**
 
-````markdown
-`r ''````{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-````
-
-Output:
-
-```{r tidy=FALSE, eval=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
+- Kuidas segregatsioonimudel aitab kaasa probleemi lahendamisele? Mida tuleks mudelisse lisada? 
+- Mis on emergentsus (*emergence*)? Kas seda esineb sinu erialal või uurimisteemas?
+- Kuidas panustab agendipõhine mudeldamine humanitaarteaduste metodoloogilisse arengusse? 
+- Mudelite loomise võimalus oma erialal? Mis andmed ja küsimused?
+- Kuidas vastata sagedasele kriitikale, mille kohaselt ei saa me kunagi päris maailma mudeldada, kuna tegureid on liiga palju?
 
 ---
 
-# Some Tips
+# Viited
 
-When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
-
-````md
-`r ''````{r, highlight.output=c(1, 3)}
-head(iris)
-```
-````
-
-```{r, highlight.output=c(1, 3), echo=FALSE}
-head(iris)
-```
-
-Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
+- Brantingham, P. J. (2003). A Neutral Model of Stone Raw Material Procurement. American Antiquity, 68(3), 487–509. https://doi.org/10.2307/3557105
+- Epstein, J. M., & Axtell, R. L. (1996). Growing Artificial Societies. Social Science from the Bottom Up. MIT Press.
+- Gilbert, N. (2008). Agent-Based Models (2nd ed.). Sage Publishing
+- Magliocca, N. R., Brown, D. G., & Ellis, E. C. (2013). Exploring Agricultural Livelihood Transitions with an Agent-Based Virtual Laboratory: Global Forces to Local Decision-Making. PLoS ONE, 8(9), e73241. https://doi.org/10.1371/journal.pone.0073241
+- Railsback, S. F., & Grimm, V. (2019). Agent-Based and Individual-Based Modeling: A Practical Introduction (2nd ed.).
+- Romanowska, I. (2015). So You Think You Can Model ? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals. Human Biology Open Access, 87(3), 169–192. https://doi.org/10.13110/humanbiology.87.3.0169??
+- Schulze, J., Müller, B., Groeneveld, J., & Grimm, V. (2017). Agent-based modelling of social-ecological systems: Achievements, challenges, and a way forward. JASSS, 20(2). https://doi.org/10.18564/jasss.3423
+- Wilensky, U., & Rand, W. (2015). An Introduction to Agent-Based Modeling: Modeling Natural, Social, and Engineered Complex Systems with NetLogo. MIT Press
 
 ---
 
-# Some Tips
+class: inverse, middle, center
 
-- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
 
-- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
+# Tänan tähelepanu eest! 
 
-- Then change the `chakra` option in YAML to point to this file, e.g.
+andres.kimber@ut.ee
 
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        chakra: libs/remark-latest.min.js
-    ```
-
-- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
-
----
-
-# Themes
-
-Don't want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
-
-```{r}
-names(xaringan:::list_css())
-```
-
----
-
-# Themes
-
-To use a theme, you can specify the `css` option as an array of CSS filenames (without the `.css` extensions), e.g.,
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts]
-```
+twitter.com/andreskimber
